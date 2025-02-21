@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 266 35% 7%;
+    --foreground: 0 0% 100%;
+    --card: 266 35% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 266 35% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 270 100% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 156 89% 51%;
+    --secondary-foreground: 266 35% 7%;
+    --muted: 266 35% 15%;
+    --muted-foreground: 266 10% 70%;
+    --accent: 270 100% 64%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 266 35% 15%;
+    --input: 266 35% 15%;
+    --ring: 270 100% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .solana-gradient {
+    @apply bg-gradient-to-r from-[#9945FF] to-[#14F195];
+    @apply bg-clip-text;
+    @apply text-transparent;
+  }
+}
+
